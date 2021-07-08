@@ -8,7 +8,7 @@ pipeline {
             
         }
         stage ('test') {
-            stepe {
+            steps {
             echo 'im testing'     
             }
             
