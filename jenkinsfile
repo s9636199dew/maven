@@ -21,3 +21,27 @@ pipeline {
         }  
     }
 }
+
+
+pipeline {
+    agent any
+    stages{
+        stage ('perf') {
+            steps {
+            echo 'im practising'
+            }
+        
+        } 
+         stage ('build') {
+            steps {
+            echo ('this is also practise one')
+            }
+
+         }
+        stage ('test')
+           steps {
+           echo ('i have to check')
+           }
+           
+    }
+}
