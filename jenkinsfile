@@ -1,31 +1,6 @@
 pipeline {
     agent any
     stages{
-        stage ('build') {
-            steps {
-            echo 'hi im building'
-            }
-            
-        }
-        stage ('test') {
-            steps {
-            echo 'im testing'     
-            }
-            
-        }
-        stage ('deploy') {
-            steps {
-             echo 'im deployinf for the first time'
-            }
-            
-        }  
-    }
-}
-
-
-pipeline {
-    agent any
-    stages{
         stage ('perf') {
             steps {
             echo 'im practising'
@@ -34,13 +9,13 @@ pipeline {
         } 
          stage ('build') {
             steps {
-            echo ('this is also practise one')
+            echo 'this is also practise one'
             }
 
          }
         stage ('test')
            steps {
-           echo ('i have to check')
+           echo 'i have to check'
            }
            
     }
