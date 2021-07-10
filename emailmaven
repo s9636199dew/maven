@@ -22,4 +22,9 @@ pipeline {
         }
         }
     }
+    post{
+        always{
+ emailext body: 'im practising with the same old repo', subject: 'pipeline email', to: 'spulgam94@gmail.com'
+    }
+      }
 }
